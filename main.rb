@@ -58,23 +58,66 @@ print "========================================================\n"
 #y = 10
 #puts y / x
 
+#puts "Simple calculator"
+#25.times { print "-" }
+#puts "Enter the first number: "
+#num_1 = gets.chomp
+#puts "Enter the second number: "
+#num_2 = gets.chomp
+#puts "The first number multiplied by the second number
+#is #{num_1.to_i * num_2.to_i}. "
+
+#puts "The first number added to the second number
+#is #{num_1.to_i + num_2.to_i}. "
+
+#puts "The first number subtracted from the second number
+#is #{num_1.to_i - num_2.to_i}. "
+
+#puts "The first number divided by the second number
+#is #{num_1.to_i / num_2.to_i}. "
+
+#puts "The first number mod the second number
+#is #{num_1.to_i % num_2.to_i}. "
+print "========================================================\n"
+print "Methods\n"
+
+def multiply(first_num, second_num)
+  first_num.to_f * second_num.to_f
+end
+
+def divide(first_num, second_num)
+  first_num.to_f / second_num.to_f
+end
+
+def add(first_num, second_num)
+  first_num.to_f + second_num.to_f
+end
+
+def subtract(first_num, second_num)
+  first_num.to_f - second_num.to_f
+end
+
+def mod(first_num, second_num)
+  first_num.to_f % second_num.to_f
+end
+
 puts "Simple calculator"
-25.times { print "-" }
 puts "Enter the first number: "
-num_1 = gets.chomp
+first_num = gets.chomp
 puts "Enter the second number: "
-num_2 = gets.chomp
+second_num = gets.chomp
+
 puts "The first number multiplied by the second number
-is #{num_1.to_i * num_2.to_i}. "
+is #{multiply(first_num, second_num)}. "
 
 puts "The first number added to the second number
-is #{num_1.to_i + num_2.to_i}. "
+#is #{add(first_num, second_num)}. "
 
 puts "The first number subtracted from the second number
-is #{num_1.to_i - num_2.to_i}. "
+#is #{subtract(first_num, second_num)}. "
 
 puts "The first number divided by the second number
-is #{num_1.to_i / num_2.to_i}. "
+#is #{divide(first_num, second_num)}. "
 
 puts "The first number mod the second number
-is #{num_1.to_i % num_2.to_i}. "
+#is #{mod(first_num, second_num)}. "
